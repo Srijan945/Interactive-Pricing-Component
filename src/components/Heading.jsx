@@ -4,7 +4,8 @@ function Heading(){
     return (
         <header className="header">
             <h1 className="header__title">Simple, traffic-based pricing</h1>
-            <p className="header__description">Sign-up for our 30-day trial. No credit card required.</p>
+            <span className="header__description">Sign-up for our 30-day trial.</span> 
+            <span className="header__description">No credit card required.</span>
         </header>
     );
 }

@@ -4,7 +4,7 @@ import PricingBenefits from "./PricingBenefits";
 
 function Card(){
     return (
-        <main>
+        <main className="card">
             <DynamicPricing />
             <PricingBenefits />
         </main>
