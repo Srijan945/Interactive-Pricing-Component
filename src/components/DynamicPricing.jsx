@@ -53,7 +53,7 @@ function DynamicPricing(){
             <Slider changePrice={changePrice}/>
             { 
                 isSmall && <p className="pricing__package">
-                <span className="pricing__amount">$16.00</span> 
+                <span className="pricing__amount">${amount}.00</span> 
                 <span className="pricing__time">/ month</span>
                 </p> 
             }
