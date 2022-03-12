@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/Interactive-Pricing-Component/static/js/main.299b5a4c.js",
+    "main.js": "/Interactive-Pricing-Component/static/js/main.e0e82e30.js",
     "index.html": "/Interactive-Pricing-Component/index.html",
-    "main.299b5a4c.js.map": "/Interactive-Pricing-Component/static/js/main.299b5a4c.js.map"
+    "main.e0e82e30.js.map": "/Interactive-Pricing-Component/static/js/main.e0e82e30.js.map"
   },
   "entrypoints": [
-    "static/js/main.299b5a4c.js"
+    "static/js/main.e0e82e30.js"
   ]
 }
