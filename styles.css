@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    min-width: 100%;
+    max-height: 1000px;
+}
+body{
+    margin: 0;
+    font-size: 0.9375rem;
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(230, 100%, 99%);
+    background-image: url("images/bg-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 50%; 
+    text-align: center;
+    color: hsl(225, 20%, 60%);
+}
+.app{
+    padding: 15% 5% 2%;
+}
+.header{
+    padding: 5% 0;
+    background-image: url("images/pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.header__title{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: hsl(227, 35%, 25%);
+}
+.header__description{
+    font-weight: 500;
+    display: block;
+}
+.card{
+    /* overflow: scroll;
+    min-width: 21.25rem; */
+    max-width: 35rem;
+    margin: 2rem auto 0;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.625rem;
+    box-shadow: 0 0.625rem 0.625rem hsl(225, 20%, 60%);
+}
+.dynamicPricing{
+    padding: 5%;
+    border-bottom: 0.0625rem solid hsl(223, 50%, 87%);
+}
+.pricing__amount{
+    font-size: 2rem;
+    color: hsl(227, 35%, 25%);
+    font-weight: 800;
+}
+.pricing__time{
+    margin-left: 0.5rem;
+    position: relative;
+    bottom: 0.375rem;
+}
+.sliderContainer{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.slider{
+    appearance: none;
+    width: 100%;
+    height: 0.625rem;
+    background-color: hsl(224, 65%, 95%);
+    border: none;
+    border-radius: 0.3125rem;
+    margin: 0;
+    cursor: pointer;
+}
+.slider:hover{
+    background-color: hsl(224, 65%, 90%);
+}
+.slider::-webkit-slider-thumb{
+    background-image: url("images/icon-slider.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    appearance: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: hsl(174, 86%, 45%);
+    box-shadow: 0 0.8rem 1.5rem 0.6rem hsl(174, 77%, 80%);
+}
+.slider::-moz-range-thumb{
+    background-image: url("images/icon-slider.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    appearance: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: hsl(174, 86%, 45%);
+    box-shadow: 0 0.8rem 1.5rem 0.6rem hsl(174, 77%, 80%);
+    border: none;
+}
+.slider__track{
+    position: absolute;
+    top: 0.375rem;
+    left: 0;
+    height: 0.625rem;
+    border-radius: 0.3125rem;
+    background-color: hsl(174, 77%, 80%);
+    pointer-events: none;
+    cursor: pointer;
+}
+.toggleBilling{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+}
+.toggle{
+    position: relative;
+    width: 3.125rem;
+    height: 1.5rem;
+    border-radius: 0.75rem;
+    background-color: hsl(223, 50%, 87%);
+    cursor: pointer;
+}
+.toggle__circle{
+    position: absolute;
+    top: 0.25rem;
+    left: 0.25rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.5rem;
+    background-color: hsl(0, 0%, 100%);
+}
+.toggle:hover{
+    background-color: hsl(174, 86%, 45%);
+    transition: background-color 0.8s;
+}
+.discount{
+    padding: 0 0.375rem;
+    height: 1.25rem;
+    border-radius: 0.625rem;
+    background-color: hsl(14, 92%, 95%);
+    color: hsl(15, 100%, 70%);
+}
+.pricingBenefits{
+    padding: 8% 5% 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.benefits__item{
+    margin-bottom: 1rem;
+}
+.benefits__img{
+    margin-right: 1rem;
+}
+.trail__button{
+    margin-top: 1rem;
+    width: 12.5rem;
+    height: 3.125rem;
+    border-radius: 1.6rem;
+    background-color: hsl(227, 35%, 25%);
+    color: white;
+    font-family: 800;
+    cursor: pointer;
+}
+.footer{
+    margin-top: 2rem;
+    font-size: 0.9375rem;
+    text-align: center;
+}
+.footer__a{ 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+.footer__a:hover{
+    color: hsl(228, 45%, 20%);
+    transition: color 0.3s;
+}
+
+@media only screen and (min-width: 500px){
+    
+    body{
+        background-size: 100% 60%;
+    }
+    .header{
+        padding: 3% 0;
+    }
+    .app{
+        padding-top: 5%;
+    }
+    .header__description{
+        display: inline;
+    }
+    .header__title{
+        font-size: 2rem;
+    }
+    .dynamicPricing__pricing{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .toggleBilling{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .pricingBenefits{
+        flex-direction: row;
+        text-align: left;
+    }
+
+}
